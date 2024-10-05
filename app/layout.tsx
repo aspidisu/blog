@@ -11,15 +11,15 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'aspidisu',
-    template: 'aspidisu | %s',
+    default: 'Aspidisu',
+    template: 'Aspidisu | %s',
   },
   description: "Aspidisu'nun Blogu",
   openGraph: {
-    title: 'aspidisu',
+    title: 'Aspidisu',
     description: "Aspidisu'nun Blogu.",
     url: baseUrl,
-    siteName: 'aspidisu',
+    siteName: 'Aspidisu',
     locale: 'tr_TR',
     type: 'website',
   },
@@ -45,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="tr"
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
