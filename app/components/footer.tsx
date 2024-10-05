@@ -12,7 +12,7 @@ function ArrowIcon() {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
 
 export default function Footer() {
@@ -46,7 +46,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
+            href="https://github.com/aspidisu/blog"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">kaynak kodu</p>
@@ -57,5 +57,5 @@ export default function Footer() {
         © {new Date().getFullYear()} | aspidisu
       </p>
     </footer>
-  )
+  );
 }

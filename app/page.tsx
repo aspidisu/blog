@@ -1,4 +1,5 @@
 import { BlogPosts } from "app/components/posts";
+const LIMIT = 3; 
 
 export default function Page() {
   return (
@@ -11,7 +12,7 @@ export default function Page() {
         sadelikten yanayım.`}
       </p>
       <div className="my-8">
-        <BlogPosts limit={3} />
+        <BlogPosts limit={LIMIT} />
       </div>
     </section>
   );
