@@ -1,6 +1,6 @@
 # Bloguma Hoş Geldiniz!
 
-selamlar, burada yazılım, bilinçli teknoloji tüketimi, tarih, arkeoloji başta olmak üzere pek çok konu hakkında yazıyorum. ayrıca internette gezinti yaparken karşılaştığım faydalı içerikleri kaydedip paylaşıyorum. sadelikten yanayım.
+Selamlar, burada yazılım, bilinçli teknoloji tüketimi, tarih, arkeoloji başta olmak üzere pek çok konu hakkında yazıyorum. Ayrıca internette gezinti yaparken karşılaştığım faydalı içerikleri kaydedip paylaşıyorum. Sadelikten yanayım.
 
 ## Neler Bulacaksınız?
 
