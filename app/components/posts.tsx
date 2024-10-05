@@ -1,14 +1,26 @@
 import Link from "next/link";
 import { formatDate, getBlogPosts } from "app/blog/utils";
 
-export function BlogPosts({ limit }) {
-  let allBlogs = getBlogPosts();
+interface BlogPost {
+  slug: string;
+  metadata: {
+    title: string;
+    publishedAt: string;
+  };
+}
+
+interface BlogPostsProps {
+  limit?: number;
+}
+
+export function BlogPosts({ limit }: BlogPostsProps) {
+  const allBlogs: BlogPost[] = getBlogPosts();
 
   const sortedBlogs = allBlogs.sort((a, b) => {
-    if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
-      return -1;
-    }
-    return 1;
+    return (
+      new Date(b.metadata.publishedAt).getTime() -
+      new Date(a.metadata.publishedAt).getTime()
+    );
   });
 
   const displayedBlogs = limit ? sortedBlogs.slice(0, limit) : sortedBlogs;
