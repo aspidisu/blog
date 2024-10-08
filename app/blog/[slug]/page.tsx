@@ -93,6 +93,20 @@ export default function Blog({ params }) {
       <article className="prose mb-20">
         <CustomMDX source={post.content} />
       </article>
+
+      <div>
+        <p className="text-xl font-bold mb-5">Yorumlar</p>
+        <div
+          id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id={process.env.NEXT_PUBLIC_CUSDIS_APP_ID} // .env'den gelen app ID
+          data-page-id={post.slug}
+          data-page-url={`${baseUrl}/blog/${post.slug}`}
+          data-page-title={post.metadata.title}
+          data-theme="auto"
+        ></div>
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+      </div>
     </section>
   );
 }
